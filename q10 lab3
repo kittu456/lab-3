@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	char a;
+	cout<<"Enter an alphabet : \n";
+	cin>>a;
+	if((a >= 'A') && (a<='Z'))
+	{
+		cout << "It is an uppercase alphabet.";
+	}
+	else
+	{
+		cout << "It is a lowercase alpabet";
+	}
+	return 0;
+}
