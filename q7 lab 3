@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	char a;
+	cout<<"Enter a character : \n";
+	cin>>a;
+	if((a >= 'a' && a <= 'z') || (a>= 'A' && a<= 'Z'))
+	{
+		cout<<"The character is an alphabet";
+	}
+	else
+	{
+		cout<<"The character is not an alphabet.";
+	}
+	return 0;
+}
