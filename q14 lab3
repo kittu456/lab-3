@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-	int a1, a2, a3;
+	float a1, a2, a3;
 	cout << "Enter three angles: \n";
 	cin >> a1 >> a2 >> a3;
 	if(a1 + a2 + a3 == 180)
