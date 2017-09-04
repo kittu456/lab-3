@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	float a, b, loss, profit;
+	cout <<"Enter the cost price.\n";
+	cin >> a;
+	cout << "Enter the selling prive.\n";
+	cin >> b;
+	if(a>b)
+	{
+		loss= a-b;
+		cout << "Loss=" <<loss;
+	}
+	else if(b>a)
+	{
+		profit= b-a;
+		cout << "Profit =" <<profit;
+	}
+	else
+	{
+		cout << "There is no profit or loss.";
+	}
+	return 0;
+}
