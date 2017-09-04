@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	float a, b, c;
+	cout << "Enter the lenghts of sides of a triangle\n";
+	cin >> a >> b >> c;
+	if(a==b==c)
+	{
+		cout << "The triangle is equilateral.";
+	}
+	else if(a==b!=c || b==c!=a || c==a!=b)
+	{
+		cout << "The triangle is isosceles.";
+	}
+	else
+	{
+		cout << "The triangle is scalene";
+	}
+	return 0;
+}
