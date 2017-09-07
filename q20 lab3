@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int basic;
+	cout << "Enter basic salary";
+	cin >> basic;
+	if(basic<= 10000)
+	{
+		int gross;
+		gross = basic + (20*basic)/100 + (80*basic)/100;
+		cout << "Gross salary = " << gross;
+	}
+	else if(basic<= 20000 && basic >10000)
+	{
+		int gross;
+		gross = basic + (25*basic)/100 + (90*basic)/100;
+		cout << "Gross salary = " << gross;
+	}
+	else
+	{
+		int gross;
+		gross = basic + (30*basic)/100 + (90*basic)/100;
+		cout << "Gross salary = " << gross;
+	}
+	return 0;
+}
