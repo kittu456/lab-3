@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int i, n;
+	cout << "Enter any number\n";
+	cin >> n;
+	while(i<n)
+	{
+		i=i+1;
+		cout<<i<<"\n";
+
+	}
+	return 0;
+}
