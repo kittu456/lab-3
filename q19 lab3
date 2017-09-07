@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	float a, b, c, d, e, percentage
+	cout <<"Enter marks in Physics out of 100 ";
+	cin >> a;
+	cout <<"Enter marks in Biology out of 100 ";
+	cin >> b;
+	cout <<"Enter marks in Chemistry out of 100 ";
+	cin >> c;
+	cout <<"Enter marks in Maths out of 100 ";
+	cin >> d;
+	cout <<"Enter marks in Computer out of 100 ";
+	cin >> e;
+	percentage = ((a+b+c+d+e)/500)*100
+	if(percentage>=90)
+	{
+		cout << "Grade = A";
+	}
+	else if(percentage>=80 && percentage<90)
+	{
+		cout << "Grade = B";
+	}
+	else if(percentage>=70 && percentage<80)
+	{
+		cout << "Grade = C";
+	}
+	else if(percentage>=60 && percentage<70)
+	{
+		cout << "Grade = D";
+	}
+	else if(percentage>=40 && percentage<60)
+	{
+		cout << "Grade = E";
+	}
+	else
+	{
+		cout <<"Grade = F";
+	}
+	return 0;
