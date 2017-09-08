@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int x, y, num;
+	num=0;
+	cout << "Enter a number\n";
+	cin >> num;
+	x = num%10;
+	while(num!=0);
+	{
+		y = num%10;
+		num = num/10;
+	}
+	cout << "First digit " << y << endl << "Last digit " << x;
+	return 0;
+}
