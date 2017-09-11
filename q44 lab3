@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n, n1;
+	n1=1;
+	cout << "Enter a number to calculate its factorial\n";
+	cin >> n;
+	for(int i=1; i<=n; i++)
+	{
+		n1=n1*i;
+	}
+	cout << "The factorial is " << n1; 
+	return 0;
+}
