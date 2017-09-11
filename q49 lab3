@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n, i, j, a, sum = 0;
+	bool prime;
+	cout << "Enter the number till where you want prime numbers";
+	cin >> n;
+	for(i=1; i<=n; i++)
+	{
+	for(j=2; j<i; j++)
+	{
+		if(i%j==0)
+		{
+			prime=false;
+			break;
+		}
+		else
+		{
+			prime=true;
+		}
+	}
+	if(prime==true)
+	{ 
+		sum = sum + i;
+	}
+	}
+	a= sum + 2;
+	cout << "The sum of prime numbers is  " << a;
+	return 0;
+}
