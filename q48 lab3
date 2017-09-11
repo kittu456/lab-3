@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n, i, j;
+	bool prime;
+	cout << "Enter the number till where you want prime numbers";
+	cin >> n;
+	cout << "Prime numbers between 1 and " << n << " are 2 ";
+	for(i=1; i<=n; i++)
+	{
+	for(j=2; j<i; j++)
+	{
+		if(i%j==0)
+		{
+			prime=false;
+			break;
+		}
+		else
+		{
+			prime=true;
+		}
+	}
+	if(prime==true)
+	{ 
+		cout << i << " ";
+	}
+	}
+	return 0;
+}
