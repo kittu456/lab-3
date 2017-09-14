@@ -5,6 +5,7 @@ int main() {
 	int n, x, rem, sum, i;
 	cout << "Enter a number\n";
 	cin >> n;
+	cout << "The armstrong numbers are "
 	for(i=1; i<=n; i++)
 	{
 		sum = 0;
@@ -17,7 +18,7 @@ int main() {
 	}
 	if(sum == i)
 	{
-		cout << i <<" ";
+		cout<<  i <<" ";
 	}
 	}
 	return 0;
