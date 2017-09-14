@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n, rem, a=1;
+	cout << "Enter any number\n";
+	cin >> n;
+	while(n!=0)
+	{
+		rem = n%10;
+		a= rem*a;
+		n=n/10;
+	}
+	cout << "The product of all the digits of the number is " << a;
+	return 0;
+}
