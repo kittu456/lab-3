@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n=1, i, x, base;
+	cout << "Enter the base and exponent respectively\n";
+	cin >> base >> i;
+	x=i;
+	while(x!=0)
+	{
+		n = base*n;
+		x=x-1;
+	}
+	cout << base << "^" << i << "=" << n;
+	return 0;
+}
