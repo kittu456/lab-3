@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n, x, n1, y;
+	n1=0;
+	cout << "Enter a number\n";
+	cin >> y;
+	n=y;
+	while(n!=0)
+	{
+		x = n%10;
+		n1 = n1*10 + x;
+		n = n/10;
+	}
+	cout << "The reverse of " << y << " is " << n1;
+	return 0;
+}
