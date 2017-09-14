@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int dec, rem, x, i=1, n=0;
+	cout << "Enter the decimal to be converted to octal number system\n";
+	cin >> dec;
+	x=dec;
+	while(x!=0)
+	{
+		rem = x%8;
+		n= n + (i*rem);
+		i=i*10;
+		x = x/8;
+	}
+	cout << "The octal number for " << dec << " is " << n;
+	return 0;
+}
