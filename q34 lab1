@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+	int n, y,num, num1, n1, dig=0, ld, fd, x, r, d,z;
+	n1=0;
+	cout << "Enter a number\n";
+	cin >> n;
+	ld = n%10;
+	num = n;
+	while(num!=0)
+	{
+		y=num%10;
+		num=num/10;
+	}
+	fd = y;
+	num1 = n;
+	while (num1/10>1)
+	{
+		num1 = num1/10;
+		dig = dig+1;
+	}
+	n1 = n - ld + y;
+	d = dig;
+	x =pow(10,d);
+	z= n1%x;
+	r = ld*x + z;
+	cout << "The new number is " << r;
+	return 0;
+}
