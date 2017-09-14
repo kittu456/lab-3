@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n, i, rem, j, f;
+	cout << "Enter any number\n";
+	cin >> n;
+	for(i=0; i<10; i++)
+	{
+              cout << "The frequency of " << i << "=";
+              f=0;
+              for(j=n; j>0; j/10)
+              {
+              	rem = j%10;
+              	if(rem==i)
+              	{
+              		f++;
+              	}
+              }
+              cout << f << "\n";
+	}
+	return 0;
+}
