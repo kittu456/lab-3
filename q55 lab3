@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n, x, rem, n1, i, num=0;
+	cout << "Enter any number\n";
+	cin >> n;
+	x=n;
+	while(x!=0)
+	{
+	rem = x%10;
+	n1=1;
+	for(i=1; i<=rem; i++)
+	{
+		n1=n1*i;
+	}
+	x=x/10;
+	num = num + n1;
+	}
+	if(num == n)
+	{
+		cout << "It is a strong number";
+	}
+	else
+	{
+		cout << "It is not a strong number.";
+	}
+	
+	return 0;
+}
