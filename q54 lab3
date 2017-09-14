@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int sum, n, i, j;
+	cout << "Enter a number till where you want perfect numbers\n";
+	cin >> n;
+	for(i=1; i<n; i++)
+	{
+		sum=0;
+		j=1;
+	while(j<i)
+	{
+	if(i%j==0){
+	sum = sum + j;
+	}
+	j = j + 1;
+	}
+	if(sum == i)
+	{
+		cout << i << " ";
+	}
+	}
+	
+	return 0;
+}
