@@ -12,7 +12,7 @@ int main() {
 		sum = sum + rem*rem*rem;
 		x=x/10;
 	}
-	if(sum = n)
+	if(sum == n)
 	{
 		cout << "The number is an armstrong number";
 	}
