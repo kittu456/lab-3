@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int rem, x, i=1, n=0, bin;
+	cout << "Enter the binary number to be converted to decimal\n";
+	cin >> bin;
+	x=bin;
+	while(x!=0)
+	{
+		rem = x%10;
+		n= n + (i*rem);
+		i=i*2;
+		x = x/10;
+	}
+	cout << "The decimal number for " << bin << " is " << n;
+	return 0;
+}
