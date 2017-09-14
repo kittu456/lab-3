@@ -5,6 +5,7 @@ int main() {
 	int n, rem, n1, i, num, number, j, x;
 	cout << "Enter any number\n";
 	cin >> number;
+	cout << "The strong numbers are ";
 	for(j=1; j<number; j++)
 	{ 
 		x=j;
