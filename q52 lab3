@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n, x, rem, sum, i;
+	cout << "Enter a number\n";
+	cin >> n;
+	for(i=1; i<=n; i++)
+	{
+		sum = 0;
+		x=i;
+	while(x!=0)
+	{
+		rem = x%10;
+		sum = sum + rem*rem*rem;
+		x=x/10;
+	}
+	if(sum == i)
+	{
+		cout << i <<" ";
+	}
+	}
+	return 0;
+}
