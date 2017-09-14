@@ -1,0 +1,91 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int amt;
+	int num=0;
+	cout <<"Enter the amount\n";
+	cin >>amt;
+	while(amt>0)
+	{
+		if(amt-2000>=0)
+		{
+			amt = amt-2000;
+			num = num+1;
+		}
+		else
+		break;
+	}
+	
+	while(amt>0)
+	{
+		if (amt-500>=0)
+		{
+			amt = amt-500;
+			num = num+1;
+		}
+		else 
+		break;
+	}
+	
+	while(amt>0)
+	{
+		if (amt-100>=0)
+		{
+			amt =amt-100;
+			num = num+1;
+		}
+		else
+		break;
+	}
+	
+	while(amt>0)
+	{
+		if (amt-50>=0)
+		{
+			amt = amt-50;
+			num = num+1;
+			
+		}
+		else 
+		break;
+	}
+	
+	while(amt>0)
+	{
+		if (amt-20>=0)
+		{
+			amt = amt-20;
+			num = num+1;
+		}
+		else
+		break;
+	}
+	
+	while(amt>0)
+	{
+		if (amt-10>=0)
+		{
+			amt = amt-10;
+		num = num+1;
+		}
+		else
+		break;
+		
+	}
+	
+	while(amt>0)
+	{
+		if (amt-5>=0)
+		{
+			amt = amt-5;
+			num=num+1;
+		}
+		else
+		break;
+		}
+		
+		cout <<"The number of notes = " <<num;
+	
+	return 0;
+}
